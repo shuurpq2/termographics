@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Users/Public/MS VSCode/termographics/test"
+    "cmake.sourceDirectory": "C:/Users/Public/MS VSCode/termographics/test",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
