@@ -29,10 +29,10 @@ public:
     void set_pos(Vector3I new_pos) { m_pos = std::move(new_pos); }
 
     Rotation get_rotation() { return m_rotation; }
-    void set_yaw(int angle) { m_rotation.yaw = normalize_yaw(angle); }
-    void set_pitch(int angle) { m_rotation.pitch = normalize_pitch(angle); }
     void set_rotation(int yaw, int pitch) { set_yaw(yaw); set_pitch(pitch); }
+    void set_yaw(int angle) { m_rotation.yaw = normalize_yaw(angle); }
     void add_yaw(int delta) { m_rotation.yaw = normalize_yaw(m_rotation.yaw + delta); }
+    void set_pitch(int angle) { m_rotation.pitch = normalize_pitch(angle); }
     void add_pitch(int delta) { m_rotation.pitch = normalize_pitch(m_rotation.pitch + delta); }
 
 private:
